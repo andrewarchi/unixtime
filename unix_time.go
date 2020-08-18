@@ -1,3 +1,6 @@
+// Package unixtime is a time.Time wrapper for marshalling Unix
+// timestamps in JSON.
+//
 package unixtime
 
 import (
