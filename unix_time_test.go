@@ -14,7 +14,7 @@ func TestUnixTimeTwoWay(t *testing.T) {
 		{"1508348908", "2017-10-18T17:48:28Z"},
 		{"1136239445", "2006-01-02T22:04:05Z"},
 	} {
-		var u UnixTime
+		var u Time
 		if err := json.Unmarshal([]byte(test.JSON), &u); err != nil {
 			t.Errorf("test %d unmarshal: %v", i, err)
 			continue
